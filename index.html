@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register/Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"></div>
+      <div class="content">
+        <form action="#" id="registerForm">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Name:</span>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Username:</span>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">E-mail:</span>
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number:</span>
+              <select id="countrySelect"></select>
+              <input
+                type="text"
+                id="mobile_code"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Password:</span>
+              <input
+                id="password-field"
+                placeholder="Enter your password"
+                type="password"
+                class="form-control"
+                name="password"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password:</span>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+
+        <form id="loginForm">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">E-mail:</span>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Password:</span>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Enter your password"
+                required
+              />
+              <span
+                toggle="#password-field"
+                class="fa fa-fw fa-eye field-icon toggle-password"
+              ></span>
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+        <div id="message"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="logReg.js"></script>
+  </body>
+</html>
